@@ -1,10 +1,11 @@
 # ProyectoFinal
 
-##Descripcion
+## Descripcion
 
-###Integrantes
+### Integrantes
+
 -Pablo Loaiza Mejia
 -Estefania Lopez Varelas 
 
-##Recursos
+## Recursos
 
