@@ -4,8 +4,9 @@
 
 ### Integrantes
 
--Pablo Loaiza Mejia
--Estefania Lopez Varelas 
+- Pablo Loaiza Mejia
+
+- Estefania Lopez Varelas 
 
 ## Recursos
 
