@@ -28,4 +28,5 @@
 	Hacer el Fork en el repositorio del profe con la información de la canción elegida.
 
 ### ¿Qué dificultades hemos tenido? 
-	A la hora de hacer el pull request nos dimos cuenta que a el grupo anterior no le habían aceptado el de ellos por que el repositorio que nosotros clonamos estaba desactualizado. 
+	A la hora de hacer el pull request nos dimos cuenta que a el grupo anterior no le habían 
+	aceptado el de ellos por que el repositorio que nosotros clonamos estaba desactualizado. 
