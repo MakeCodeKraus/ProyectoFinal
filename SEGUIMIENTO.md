@@ -33,10 +33,10 @@
 
 ## 23/04/2021
 ### ¿Qué hemos hecho? 
-	Elegir una alternativa para realizar una nueva versión en el repositorio donde se tenga en cuenta la musica
+	Elegir una alternativa para realizar una nueva versión en el repositorio donde se tenga en cuenta la música
 
 ### ¿Qué vamos a hacer? 
-	Crea un reproductor de música con JavaScript, HTML5 y CSS, para añadir una nueva versión.
+	Se creara un reproductor de musica en Java desde la herramienta NetBeans IDE 8.2
 
 ### ¿Qué dificultades hemos tenido? 
 	Al momento de realizar la ejecución no funiconaba ya que las canciones habian sido descargadas inicialmente en 

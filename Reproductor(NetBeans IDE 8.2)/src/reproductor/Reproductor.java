@@ -36,7 +36,7 @@ public void coge(String y){
     public void reproducemp3 () throws Exception{
        try {
         Reproductor   mi_reproductor = new Reproductor();
-            mi_reproductor.AbrirFichero("C:/Users/Estefanía/Desktop/Reproductor/canciones/La Oreja de Van Gogh - Rosas.mp3");
+            mi_reproductor.AbrirFichero("C:/Users/Estefanía/OneDrive - UPB/Lógica de programación/ProyectoFinal/Canciones/La Oreja de Van Gogh - Rosas.mp3");
             mi_reproductor.Play();
         } catch (Exception ex) {
             System.out.println("Error: " + ex.getMessage());
@@ -44,7 +44,7 @@ public void coge(String y){
     }
     public static void main(String args[]) throws Exception{
      Reproductor y = new Reproductor();
-     y.AbrirFichero("C:/Users/Estefanía/Desktop/Reproductor/canciones/La Oreja de Van Gogh - Rosas.mp3");
+     y.AbrirFichero("C:/Users/Estefanía/OneDrive - UPB/Lógica de programación/ProyectoFinal/Canciones/La Oreja de Van Gogh - Rosas.mp3");
      y.Play();
     }
 }

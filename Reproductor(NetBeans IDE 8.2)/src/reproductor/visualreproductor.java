@@ -131,7 +131,7 @@ Reproductor r=null;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     try {
         // TODO add your handling code here:
-        r.AbrirFichero("C:/Users/Estefanía/Desktop/Reproductor/canciones/La Oreja de Van Gogh - Rosas.mp3");
+        r.AbrirFichero("C:/Users/Estefanía/OneDrive - UPB/Lógica de programación/ProyectoFinal/Canciones/La Oreja de Van Gogh - Rosas.mp3");
     } catch (Exception ex) {
         Logger.getLogger(visualreproductor.class.getName()).log(Level.SEVERE, null, ex);
     }

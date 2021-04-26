@@ -12,9 +12,11 @@
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-[Sistemas Web](https://obedalvarado.pw/blog/crea-un-reproductor-de-musica-con-javascript-html5-y-css/)
+[MBAjava](https://www.mbajava.com/2012/06/reproductor-o-reproducir-musica-en-java.html)
 
-[NuevoExito](https://obedalvarado.pw/blog/crea-un-reproductor-de-musica-con-javascript-html5-y-css/)
+[Letras](https://www.letras.com/)
+
+[NUEVOEXITO](http://mp3xd-3.nuevoexito.org/)
 
 ---
 
