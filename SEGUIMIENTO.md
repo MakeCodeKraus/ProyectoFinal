@@ -36,9 +36,9 @@
 	Elegir una alternativa para realizar una nueva versión en el repositorio donde se tenga en cuenta la música
 
 ### ¿Qué vamos a hacer? 
-	Se creara un reproductor de musica en Java desde la herramienta NetBeans IDE 8.2
+	Se creara una carpeta de canciones en formato .mid junto a otra de recursos para
+	trabajar el formato csv como se hizo en el repositorio base, eligiendo una pequeña
+	lista de reproducción.
 
 ### ¿Qué dificultades hemos tenido? 
-	Al momento de realizar la ejecución no funiconaba ya que las canciones habian sido descargadas inicialmente en 
-	formato .mid y no ejecutaba ninguna de ellas, así que todas debieron ser remplazadas por formato .mp3
-	
+	Definir que avances realizariamos en el proyecto.
