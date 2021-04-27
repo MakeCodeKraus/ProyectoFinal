@@ -10,9 +10,9 @@
 
 ## Recursos
 
-[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-[Musica MIDI Gratis](http://www.musicamidigratis.com/)
-[Letras](https://www.letras.com/)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Musica MIDI Gratis](http://www.musicamidigratis.com/)
+- [Letras](https://www.letras.com/)
 
 
 ---
