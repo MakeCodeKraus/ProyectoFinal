@@ -42,3 +42,13 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Definir que avances realizariamos en el proyecto.
+	
+## 28/04/2021
+### ¿Qué hemos hecho? 
+	Definimos como vamos que vamos hacer como proyecto.
+
+### ¿Qué vamos a hacer? 
+	crearemos el primer prototipo del menu del programa que vamos a hacer.
+
+### ¿Qué dificultades hemos tenido? 
+	Ninguna.
