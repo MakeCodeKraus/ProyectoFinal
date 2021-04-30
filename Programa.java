@@ -43,6 +43,7 @@ public class Programa {
                             System.out.println("3. Canción 3");
                             System.out.println("4. Canción 4");
                             System.out.println("5. Canción 5");
+                            System.out.println("6. Detener canción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -220,8 +221,6 @@ public class Programa {
                 System.out.println("Reproduciendo música aleatoriamente");
             }
 
-         
-
-        } while(opcionMenuPrincipal != 6);
+        } while (opcionMenuPrincipal != 6);
     }
 }
