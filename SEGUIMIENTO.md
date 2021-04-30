@@ -53,6 +53,7 @@
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
 
+
 ## 30/04/2021
 ### ¿Qué hemos hecho? 
 	Construimos la idea principal para el programa.
@@ -62,3 +63,4 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
+
