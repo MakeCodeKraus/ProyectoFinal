@@ -42,7 +42,11 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Definir que avances realizariamos en el proyecto.
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> de396ed4bd601cf52fb9b68538afd11b4be01a16
 ## 28/04/2021
 ### ¿Qué hemos hecho? 
 	Definimos como vamos que vamos hacer como proyecto.
@@ -52,6 +56,7 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
+<<<<<<< HEAD
 
 
 ## 30/04/2021
@@ -64,3 +69,5 @@
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
 
+=======
+>>>>>>> de396ed4bd601cf52fb9b68538afd11b4be01a16
