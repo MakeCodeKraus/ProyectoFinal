@@ -10,6 +10,7 @@ import javax.sound.midi.Sequencer;
 public class Reproduccion extends Thread {
     private static String[] sonido = {"canciones/El_muelle_de_San_Blas.mid","canciones/La_playa.mid","canciones/memuero.mid"};
     private static Sequencer sequencer;
+    public static boolean reproduciendo;
 
     public static void empezar(int n) {
         try {
@@ -30,5 +31,16 @@ public class Reproduccion extends Thread {
 
     }
 
+    public static void detener(){
+        if(sequencer!=null)
+        {
+            if(sequencer.isOpen())
+            {
+                sequencer.stop();
+                sequencer.close();
+            }
+        }
+        reproduciendo = false;
+    }
 
 }
