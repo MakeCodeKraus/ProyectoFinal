@@ -28,6 +28,7 @@ public class Programa {
                     System.out.println("2. Pop");
                     System.out.println("3. Reggaetón");
                     System.out.println("4. Rock");
+                    System.out.println("5. Detener reproducción");
                     System.out.println("0. Salir");
                     System.out.println("");
 
@@ -52,7 +53,8 @@ public class Programa {
                             System.out.println("10. Rayando el sol");
                             System.out.println("11. Rosas");
                             System.out.println("12. Tu peor error");
-                            System.out.println("13. Vino tinto");                            
+                            System.out.println("13. Vino tinto"); 
+                            System.out.println("14. Detener reproducción");                           
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -71,7 +73,8 @@ public class Programa {
                             System.out.println("4. La playa");
                             System.out.println("5. Paris");
                             System.out.println("6. Vivo por ella");
-                            System.out.println("7. Yesterday");                           
+                            System.out.println("7. Yesterday");    
+                            System.out.println("8. Detener reproducción");                       
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -86,6 +89,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. La gasolina");
                             System.out.println("2. Mírame");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -100,6 +104,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. Hey Jude");
                             System.out.println("2. Don't cry");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -133,6 +138,7 @@ public class Programa {
                     System.out.println("13. Andrea Bocelli");
                     System.out.println("14. La Quinta Estación");
                     System.out.println("15. Manu Chao");
+                    System.out.println("16. Detener reproducción");
                     System.out.println("0. Salir");
                     System.out.println("");
 
@@ -148,6 +154,7 @@ public class Programa {
                             System.out.println("1. A Dios le pido");
                             System.out.println("2. La camisa negra");
                             System.out.println("3. Nada valgo sin tu amor");
+                            System.out.println("4. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -162,6 +169,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. Como camarón");
                             System.out.println("2. Vino tinto");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -175,6 +183,7 @@ public class Programa {
                             System.out.println("Cuarteto de Nos");
                             System.out.println("");
                             System.out.println("1. Cuando sea grande");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -188,6 +197,7 @@ public class Programa {
                             System.out.println("Erick Rubin");
                             System.out.println("");
                             System.out.println("1. Dame amor");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -201,6 +211,7 @@ public class Programa {
                             System.out.println("Maná");
                             System.out.println("");
                             System.out.println("1. El muelle de San Blás");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -214,6 +225,7 @@ public class Programa {
                             System.out.println("Ducah Dho");
                             System.out.println("");
                             System.out.println("1. En algún lugar");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -227,6 +239,7 @@ public class Programa {
                             System.out.println("Guns N' Roses");
                             System.out.println("");
                             System.out.println("1. Don't cry");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -240,6 +253,7 @@ public class Programa {
                             System.out.println("Heroes del silencio");
                             System.out.println("");
                             System.out.println("1. Maldito duende");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -254,6 +268,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. Hey Jude");
                             System.out.println("2. Yesterday");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -268,6 +283,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. La Gasolina");
                             System.out.println("2. Mírame");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -283,6 +299,7 @@ public class Programa {
                             System.out.println("1. Rosas");
                             System.out.println("2. París");
                             System.out.println("3. La playa");
+                            System.out.println("4. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -296,6 +313,7 @@ public class Programa {
                             System.out.println("NEK");
                             System.out.println("");
                             System.out.println("1. Laura no esta");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -309,6 +327,7 @@ public class Programa {
                             System.out.println("Andrea Bucelli");
                             System.out.println("");
                             System.out.println("1. Vivo por ella");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -322,6 +341,7 @@ public class Programa {
                             System.out.println("La Quinta Estación");
                             System.out.println("");
                             System.out.println("1. Me muero");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -335,6 +355,7 @@ public class Programa {
                             System.out.println("Manu Chao");
                             System.out.println("");
                             System.out.println("1. Me gustas tu");
+                            System.out.println("2. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -356,6 +377,7 @@ public class Programa {
                     System.out.println("");
                     System.out.println("1. El viaje de Copperpot");
                     System.out.println("2. Mi sangre");
+                    System.out.println("3. Detener reproducción");
                     System.out.println("0. Salir");
                     System.out.println("");
 
@@ -370,6 +392,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. París");
                             System.out.println("2. La playa");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -384,6 +407,7 @@ public class Programa {
                             System.out.println("");
                             System.out.println("1. Tengo la camisa negra");
                             System.out.println("2. Nada Valgo sin tu amor");
+                            System.out.println("3. Detener reproducción");
                             System.out.println("0. Salir");
                             System.out.println("");
 
@@ -411,21 +435,22 @@ public class Programa {
                     System.out.println("7. Don't cry");
                     System.out.println("8. Maldito Duende");
                     System.out.println("9. Hey Jude");
-                    System.out.println("10. La gasolina");
-                    System.out.println("11. La playa");
-                    System.out.println("12. Laura no esta");
-                    System.out.println("13. Me gustas tú");
-                    System.out.println("14. Mírame");
-                    System.out.println("15. Nada valgo sin tu amor");
-                    System.out.println("16. París");
-                    System.out.println("17. Rayando el sol");
-                    System.out.println("18. Rosas");
-                    System.out.println("19. Vino tinto");
-                    System.out.println("20. Vivo por ella");
-                    System.out.println("21. Yesterday");
-                    System.out.println("22. Me muero");
-                    System.out.println("23. La camisa negra");
-                    System.out.println("24. Tu peor error");                    
+                    System.out.println("10. La camisa negra");
+                    System.out.println("11. La gasolina");
+                    System.out.println("12. La playa");
+                    System.out.println("13. Laura no esta");
+                    System.out.println("14. Me gustas tú");
+                    System.out.println("15. Me muero");
+                    System.out.println("16. Mírame");
+                    System.out.println("17. Nada valgo sin tu amor");
+                    System.out.println("18. París");
+                    System.out.println("19. Rayando el sol");
+                    System.out.println("20. Rosas");
+                    System.out.println("21. Tu peor error");  
+                    System.out.println("22. Vino tinto");
+                    System.out.println("23. Vivo por ella");
+                    System.out.println("24. Yesterday");
+                    System.out.println("25. Detener reproducción");                  
                     System.out.println("0. Salir");
                     System.out.println("");
 
@@ -433,76 +458,76 @@ public class Programa {
 
                     switch (cancion) {
                     case 1:
-                        System.out.println("Reproduciendo canción 1");
+                        System.out.println("Reproduciendo A Dios le pido");
                         break;
                     case 2:
-                        System.out.println("Reproduciendo canción 2");
+                        System.out.println("Reproduciendo Como Camarón");
                         break;
                     case 3:
-                        System.out.println("Reproduciendo canción 3");
+                        System.out.println("Reproduciendo Cuando sea grande");
                         break;
                     case 4:
-                        System.out.println("Reproduciendo canción 4");
+                        System.out.println("Reproduciendo Dame amor");
                         break;
                     case 5:
-                        System.out.println("Reproduciendo canción 5");
+                        System.out.println("Reproduciendo El muelle de San Blás");
                         break;
                     case 6:
-                        System.out.println("Reproduciendo canción 6");
+                        System.out.println("Reproduciendo En algún lugar");
                         break;
                     case 7:
-                        System.out.println("Reproduciendo canción 7");
+                        System.out.println("Reproduciendo Don't cry");
                         break;
                     case 8:
-                        System.out.println("Reproduciendo canción 8");
+                        System.out.println("Reproduciendo Maldito Duende");
                         break;
                     case 9:
-                        System.out.println("Reproduciendo canción 9");
+                        System.out.println("Reproduciendo Hey Jude");
                         break;
                     case 10:
-                        System.out.println("Reproduciendo canción 10");
+                        System.out.println("Reproduciendo La camisa negra");
                         break;
                     case 11:
-                        System.out.println("Reproduciendo canción 11");
+                        System.out.println("Reproduciendo La gasolina");
                         break;
                     case 12:
-                        System.out.println("Reproduciendo canción 12");
+                        System.out.println("Reproduciendo La playa");
                         break;
                     case 13:
-                        System.out.println("Reproduciendo canción 13");
+                        System.out.println("Reproduciendo Laura no esta");
                         break;
                     case 14:
-                        System.out.println("Reproduciendo canción 14");
+                        System.out.println("Reproduciendo Me gustas tú");
                         break;
                     case 15:
-                        System.out.println("Reproduciendo canción 15");
+                        System.out.println("Reproduciendo Me muero");
                         break;
                     case 16:
-                        System.out.println("Reproduciendo canción 16");
+                        System.out.println("Reproduciendo Mírame");
                         break;
                     case 17:
-                        System.out.println("Reproduciendo canción 17");
+                        System.out.println("Reproduciendo Nada valgo sin tu amor");
                         break;
                     case 18:
-                        System.out.println("Reproduciendo canción 18");
+                        System.out.println("Reproduciendo París");
                         break;
                     case 19:
-                        System.out.println("Reproduciendo canción 19");
+                        System.out.println("Reproduciendo Rayando el sol");
                         break;
                     case 20:
-                        System.out.println("Reproduciendo canción 20");
+                        System.out.println("Reproduciendo Rosas");
                         break;
                     case 21:
-                        System.out.println("Reproduciendo canción 21");
+                        System.out.println("Reproduciendo Tu peor error");
                         break;
                     case 22:
-                        System.out.println("Reproduciendo canción 22");
+                        System.out.println("Reproduciendo Vino tinto");
                         break;
                     case 23:
-                        System.out.println("Reproduciendo canción 23");
+                        System.out.println("Reproduciendo Vivo por ella");
                         break;
                     case 24:
-                        System.out.println("Reproduciendo canción 24");
+                        System.out.println("Reproduciendo Yesterday");
                         break;                                                                                                
 
                     default:

@@ -61,5 +61,6 @@
 ### ¿Qué vamos a hacer? 
 	- Se realizara el un metodo que nos permita empezar a reproducir y detener los archivos .mid.
 	- Organizar arreglo con cada uno de los archivos .mid.
+	- Organización de menus y lista de canciones y creación de archivo con la lista de las canciones.
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
