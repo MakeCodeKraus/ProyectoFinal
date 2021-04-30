@@ -516,8 +516,6 @@ public class Programa {
                 System.out.println("Reproduciendo música aleatoriamente");
             }
 
-         
-
-        } while(opcionMenuPrincipal != 6);
+        } while (opcionMenuPrincipal != 6);
     }
 }
