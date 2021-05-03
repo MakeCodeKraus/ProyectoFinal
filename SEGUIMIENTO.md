@@ -62,5 +62,16 @@
 	- Se realizara el un metodo que nos permita empezar a reproducir y detener los archivos .mid.
 	- Organizar arreglo con cada uno de los archivos .mid.
 	- Organización de menus y lista de canciones y creación de archivo con la lista de las canciones.
+
+### ¿Qué dificultades hemos tenido? 
+	Ninguna.
+
+## 2/05/2021
+### ¿Qué hemos hecho? 
+	Se realizo la base de el programa con los métodos de reproducción y detención de los archivos de música.
+
+### ¿Qué vamos a hacer? 
+	Implementar métodos de reproducción y detención de las canciones en el menu de géneros.
+
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
