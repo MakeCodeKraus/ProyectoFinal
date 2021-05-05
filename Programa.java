@@ -288,6 +288,9 @@ public class Programa {
 
                         } while (opcionGenero != 0);
 
+                    } else if (genero == 5) {
+                        Reproduccion.detener();
+                        
                     } else {
                         System.out.println("¡Dato invalido!");
                     }
@@ -336,6 +339,32 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(0);
+                                    System.out.println("Reproduciendo A Dios le pido");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(9);
+                                    System.out.println("Reproduciendo La camisa negra");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(16);
+                                    System.out.println("Reproduciendo Nada valgo sin tu amor");
+                                    System.out.println("");
+                                    break;
+                                case 4:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 2) {
@@ -351,6 +380,26 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(1);
+                                    System.out.println("Reproduciendo Como camarón");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(21);
+                                    System.out.println("Reproduciendo Vino tinto");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 3) {
@@ -364,6 +413,20 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(2);
+                                    System.out.println("Reproduciendo Cuando sea grande");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -379,6 +442,20 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(3);
+                                    System.out.println("Reproduciendo Dame amor");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 5) {
@@ -392,6 +469,20 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(4);
+                                    System.out.println("Reproduciendo El muelle de Sam Blás");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -407,6 +498,20 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(5);
+                                    System.out.println("Reproduciendo En algún lugar");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 7) {
@@ -421,6 +526,20 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(6);
+                                    System.out.println("Reproduciendo Don't cry");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 8) {
@@ -434,6 +553,20 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(7);
+                                    System.out.println("Reproduciendo Maldito duende");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -450,6 +583,26 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(8);
+                                    System.out.println("Reproduciendo Hey Jude");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(23);
+                                    System.out.println("Reproduciendo Yesterday");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 10) {
@@ -464,6 +617,27 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(10);
+                                    System.out.println("Reproduciendo La gasolina");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(15);
+                                    System.out.println("Reproduciendo Mírame");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -481,6 +655,32 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(19);
+                                    System.out.println("Reproduciendo Rosas");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(17);
+                                    System.out.println("Reproduciendo París");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(11);
+                                    System.out.println("Reproduciendo La playa");
+                                    System.out.println("");
+                                    break;
+                                case 4:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 12) {
@@ -494,6 +694,20 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(12);
+                                    System.out.println("Reproduciendo Laura no esta");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -509,6 +723,20 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(22);
+                                    System.out.println("Reproduciendo Vivo por ella");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
 
                     } else if (artistas == 14) {
@@ -522,6 +750,20 @@ public class Programa {
                             System.out.println("");
 
                             opcionArtistas = dato.nextInt();
+
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(14);
+                                    System.out.println("Reproduciendo Me muero");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
 
                         } while (opcionArtistas != 0);
 
@@ -537,7 +779,24 @@ public class Programa {
 
                             opcionArtistas = dato.nextInt();
 
+                            switch (opcionArtistas) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(13);
+                                    System.out.println("Reproduciendo Me gustas tú");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionArtistas != 0);
+
+                    } else if (artistas == 16) {
+                        Reproduccion.detener();
 
                     } else {
                         System.out.println("¡Dato invalido!");

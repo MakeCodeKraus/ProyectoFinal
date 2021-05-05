@@ -75,3 +75,13 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
+
+## 5/05/2021
+### ¿Qué hemos hecho? 
+	Hemos implementado el método de empezar y detener en el menu de géneros.
+
+### ¿Qué vamos a hacer? 
+	Implementar métodos de reproducción y detención de las canciones en el menu de artistas.
+
+### ¿Qué dificultades hemos tenido? 
+	Ninguna.
