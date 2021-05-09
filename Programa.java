@@ -937,78 +937,128 @@ public class Programa {
 
                     switch (cancion) {
                         case 1:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(0);
                             System.out.println("Reproduciendo A Dios le pido");
                             break;
                         case 2:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(1);
                             System.out.println("Reproduciendo Como Camarón");
                             break;
                         case 3:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(2);
                             System.out.println("Reproduciendo Cuando sea grande");
                             break;
                         case 4:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(3);
                             System.out.println("Reproduciendo Dame amor");
                             break;
                         case 5:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(4);
                             System.out.println("Reproduciendo El muelle de San Blás");
                             break;
                         case 6:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(5);
                             System.out.println("Reproduciendo En algún lugar");
                             break;
                         case 7:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(6);
                             System.out.println("Reproduciendo Don't cry");
                             break;
                         case 8:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(7);
                             System.out.println("Reproduciendo Maldito Duende");
                             break;
                         case 9:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(8);
                             System.out.println("Reproduciendo Hey Jude");
                             break;
                         case 10:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(9);
                             System.out.println("Reproduciendo La camisa negra");
                             break;
                         case 11:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(10);
                             System.out.println("Reproduciendo La gasolina");
                             break;
                         case 12:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(11);
                             System.out.println("Reproduciendo La playa");
                             break;
                         case 13:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(12);
                             System.out.println("Reproduciendo Laura no esta");
                             break;
                         case 14:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(13);
                             System.out.println("Reproduciendo Me gustas tú");
                             break;
                         case 15:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(14);
                             System.out.println("Reproduciendo Me muero");
                             break;
                         case 16:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(15);
                             System.out.println("Reproduciendo Mírame");
                             break;
                         case 17:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(16);
                             System.out.println("Reproduciendo Nada valgo sin tu amor");
                             break;
                         case 18:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(17);
                             System.out.println("Reproduciendo París");
                             break;
                         case 19:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(18);
                             System.out.println("Reproduciendo Rayando el sol");
                             break;
                         case 20:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(19);
                             System.out.println("Reproduciendo Rosas");
                             break;
                         case 21:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(20);
                             System.out.println("Reproduciendo Tu peor error");
                             break;
                         case 22:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(21);
                             System.out.println("Reproduciendo Vino tinto");
                             break;
                         case 23:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(22);
                             System.out.println("Reproduciendo Vivo por ella");
                             break;
                         case 24:
+                            Reproduccion.detener();
+                            Reproduccion.empezar(23);
                             System.out.println("Reproduciendo Yesterday");
                             break;
-
+                        case 25:
+                            Reproduccion.detener();
+                            break;
                         default:
                             System.out.println("¡Dato invalido!");
                             break;
