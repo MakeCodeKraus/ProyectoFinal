@@ -1074,6 +1074,7 @@ public class Programa {
                 int opcionAleatorio;
                 
                 Reproduccion.empezar(aleatorio);
+                System.out.println("Reproduciendo " + canciones[aleatorio]);
 
                 do {
                     System.out.println("Reproduciendo música aleatoriamente");
@@ -1090,9 +1091,11 @@ public class Programa {
                         Reproduccion.detener();
                         if (aleatorio < 24) {
                             aleatorio++;
+                            System.out.println("Reproduciendo " + canciones[aleatorio]);
                             Reproduccion.empezar(aleatorio);
                         } else {
                             aleatorio = 0;
+                            System.out.println("Reproduciendo " + canciones[aleatorio]);
                             Reproduccion.empezar(aleatorio);
                         }
                     }
