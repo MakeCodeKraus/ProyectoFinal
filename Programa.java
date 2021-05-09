@@ -5,6 +5,8 @@ public class Programa {
         Scanner dato = new Scanner(System.in);
         int opcionMenuPrincipal;
 
+        String[] canciones = {"A Dios le pido", "Como Camarón", "Cuando sea grande", "Dame amor", "El muelle de San Blás", "En algún lugar", "Don't cry", "Maldito duende", "Hey Jude", "La camisa negra", "La gasolina", "La playa", "Laura no esta", "Me gustas tú", "Me muero", "Mírame", "Nada valgo sin tu amor", "París", "Rayando el sol", "Rosas", "Tu peor error", "Vino tinto", "Vivo por ella", "Yesterday"};
+
         do {
             System.out.println("¿Que deseas escuchar?");
             System.out.println("");
