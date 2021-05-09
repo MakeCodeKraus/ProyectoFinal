@@ -290,7 +290,7 @@ public class Programa {
 
                     } else if (genero == 5) {
                         Reproduccion.detener();
-                        
+
                     } else {
                         System.out.println("¡Dato invalido!");
                     }
@@ -833,6 +833,26 @@ public class Programa {
 
                             opcionAlbum = dato.nextInt();
 
+                            switch (opcionAlbum) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(17);
+                                    System.out.println("Reproduciendo París");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(11);
+                                    System.out.println("Reproduciendo La playa");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionAlbum != 0);
 
                     } else if (album == 2) {
@@ -848,7 +868,30 @@ public class Programa {
 
                             opcionAlbum = dato.nextInt();
 
+                            switch (opcionAlbum) {
+                                case 1:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(9);
+                                    System.out.println("Reproduciendo Tengo la camisa negra");
+                                    System.out.println("");
+                                    break;
+                                case 2:
+                                    Reproduccion.detener();
+                                    Reproduccion.empezar(16);
+                                    System.out.println("Reproduciendo Nada Valgo sin tu amor");
+                                    System.out.println("");
+                                    break;
+                                case 3:
+                                    Reproduccion.detener();
+                                    break;
+                                default:
+                                    break;
+                            }
+
                         } while (opcionAlbum != 0);
+
+                    } else if (album == 3) {
+                        Reproduccion.detener();
 
                     } else {
                         System.out.println("¡Dato invalido!");
