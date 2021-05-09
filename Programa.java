@@ -1068,7 +1068,34 @@ public class Programa {
             }
             // opcion Aleatorio
             else if (opcionMenuPrincipal == 5) {
-                System.out.println("Reproduciendo música aleatoriamente");
+                int aleatorio = (int) (Math.random() * 24);
+                int opcionAleatorio;
+                
+                Reproduccion.empezar(aleatorio);
+
+                do {
+                    System.out.println("Reproduciendo música aleatoriamente");
+                    System.out.println("1. Detener.");
+                    System.out.println("2. Siguiente.");
+                    System.out.println("3. salir.");
+                    System.out.println("");
+
+                    opcionAleatorio = dato.nextInt();
+
+                    if (opcionAleatorio == 1) {
+                        Reproduccion.detener();
+                    } else if (opcionAleatorio == 2) {
+                        Reproduccion.detener();
+                        if (aleatorio < 24) {
+                            aleatorio++;
+                            Reproduccion.empezar(aleatorio);
+                        } else {
+                            aleatorio = 0;
+                            Reproduccion.empezar(aleatorio);
+                        }
+                    }
+
+                } while (opcionAleatorio != 3);
             }
 
         } while (opcionMenuPrincipal != 6);
