@@ -1592,5 +1592,14 @@ public class Programa{
                 }
 
             } while (opcionMenuPrincipal != 6);
+
+        }catch(Exception e){
+
+            System.out.println(e);
+        }
+
+        finally{
+            audio.detener();
         }
     }
+}
