@@ -216,11 +216,25 @@ public class Programa{
                                 System.out.println("12. Tu peor error");
                                 System.out.println("13. Vino tinto");
                                 System.out.println("14. Detener reproducción");
+                                System.out.println("15. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 15){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
 
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
+                            
                                 switch (opcionGenero) {
                                     case 1:
                                         Reproduccion.detener();
@@ -322,10 +336,24 @@ public class Programa{
                                 System.out.println("6. Vivo por ella");
                                 System.out.println("7. Yesterday");
                                 System.out.println("8. Detener reproducción");
+                                System.out.println("9. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 9){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionGenero) {
                                     case 1:
@@ -387,10 +415,24 @@ public class Programa{
                                 System.out.println("1. La gasolina");
                                 System.out.println("2. Mírame");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionGenero) {
                                     case 1:
@@ -422,10 +464,24 @@ public class Programa{
                                 System.out.println("1. Hey Jude");
                                 System.out.println("2. Don't cry");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionGenero) {
                                     case 1:
