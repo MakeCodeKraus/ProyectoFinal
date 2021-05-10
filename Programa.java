@@ -1260,10 +1260,24 @@ public class Programa{
                                 System.out.println("1. París");
                                 System.out.println("2. La playa");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionAlbum = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionAlbum) {
                                     case 1:
@@ -1295,10 +1309,25 @@ public class Programa{
                                 System.out.println("1. Tengo la camisa negra");
                                 System.out.println("2. Nada Valgo sin tu amor");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionAlbum = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
+
 
                                 switch (opcionAlbum) {
                                     case 1:
