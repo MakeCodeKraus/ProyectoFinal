@@ -1391,10 +1391,25 @@ public class Programa{
                         System.out.println("23. Vivo por ella");
                         System.out.println("24. Yesterday");
                         System.out.println("25. Detener reproducción");
+                        System.out.println("26. Mostrar letra");
                         System.out.println("0. Salir");
                         System.out.println("");
 
                         cancion = dato.nextInt();
+                        centinela = ConsoleInput.getInt();
+						
+                        if(centinela == 26){
+                        imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                        indice_cancion = ConsoleInput.getInt();
+
+                        inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+                        fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+                        
+                        letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+                        imprimir(letra_cancion.toString());
+                        }
+
 
                         switch (cancion) {
                             case 1:
