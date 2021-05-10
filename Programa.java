@@ -1554,10 +1554,24 @@ public class Programa{
                         System.out.println("Reproduciendo música aleatoriamente");
                         System.out.println("1. Detener.");
                         System.out.println("2. Siguiente.");
-                        System.out.println("3. salir.");
+                        System.out.println("3. Salir.");
+                        System.out.println("4. Mostrar letra");
                         System.out.println("");
 
                         opcionAleatorio = dato.nextInt();
+                        centinela = ConsoleInput.getInt();
+						
+                        if(centinela == 4){
+                        imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                        indice_cancion = ConsoleInput.getInt();
+
+                        inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+                        fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+                        
+                        letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+                        imprimir(letra_cancion.toString());
+                        }
 
                         if (opcionAleatorio == 1) {
                             Reproduccion.detener();
