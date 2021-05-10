@@ -780,10 +780,24 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. En algún lugar");
                                 System.out.println("2. Detener reproducción");
+                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 3){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -808,10 +822,24 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Don't cry");
                                 System.out.println("2. Detener reproducción");
+                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 3){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -836,10 +864,24 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Maldito duende");
                                 System.out.println("2. Detener reproducción");
+                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 3){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -865,10 +907,25 @@ public class Programa{
                                 System.out.println("1. Hey Jude");
                                 System.out.println("2. Yesterday");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
+
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -900,10 +957,25 @@ public class Programa{
                                 System.out.println("1. La Gasolina");
                                 System.out.println("2. Mírame");
                                 System.out.println("3. Detener reproducción");
+                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
+                                centinela = ConsoleInput.getInt();
+						
+								if(centinela == 4){
+								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+								indice_cancion = ConsoleInput.getInt();
+
+								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+								
+								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+
+								imprimir(letra_cancion.toString());
+                                }
+
 
                                 switch (opcionArtistas) {
                                     case 1:
