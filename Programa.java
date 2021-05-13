@@ -2,6 +2,7 @@ import java.util.Scanner;
 import org.fusesource.jansi.AnsiConsole;
 import static org.fusesource.jansi.Ansi.*;
 import static org.fusesource.jansi.Ansi.Color.*;
+import java.util.*;
 
 public class Programa{
 
@@ -121,19 +122,24 @@ public class Programa{
 
 	public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data){
 		StringBuilder str = new StringBuilder();
+		StringTokenizer temp;
 
 		for(int i = inicio; i<=fin; i++)
 		{
-			str.append(data[i]+"\n");		
+			//System.out.println("@  "+data[i]);
+
+			temp = new StringTokenizer(data[i],";");
+
+			while(temp.hasMoreTokens())
+			{
+				System.out.print(temp.nextToken()+" ");
+			}
+			System.out.println();
+			//str.append(data[i]+"\n");
 		}
-		/*for (int j = 0; j <= str.length()-1; j ++){
-			if(str(j).equals("\u003B")){
-				str.replace("\u003B", "\u0020");
-			}			
-		}*/
 		return str;
 	}
-
+    
     public static void main(String[] args) {
         Scanner dato = new Scanner(System.in);
         int opcionMenuPrincipal;
@@ -154,10 +160,10 @@ public class Programa{
 
             do {
 
-                System.out.println("                              _     _                ");
-				System.out.println("                             ( \\---/ )                ");
-				System.out.println("                              ) . . (                ");
-				System.out.println("________________________,--._(___Y___)_,--.___________");
+                System.out.println("                         _     _                ");
+				System.out.println("                        ( \\---/ )                ");
+				System.out.println("                         ) . . (                ");
+				System.out.println("___________________,--._(___Y___)_,--.___________");
 				System.out.println("                        `--'           `--'                ");
 			
 				System.out.println("______ ___________ _       _____   _____________"); 
