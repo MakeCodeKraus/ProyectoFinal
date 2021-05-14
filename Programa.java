@@ -230,7 +230,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 15){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -350,7 +350,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 9){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -429,7 +429,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -478,7 +478,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -565,7 +565,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 5){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -620,7 +620,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -668,7 +668,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -710,7 +710,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -752,7 +752,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -794,7 +794,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -836,7 +836,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -878,7 +878,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -921,7 +921,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -971,7 +971,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1023,7 +1023,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 5){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1078,7 +1078,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1120,7 +1120,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1163,7 +1163,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1206,7 +1206,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 3){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1274,7 +1274,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1323,7 +1323,7 @@ public class Programa{
                                 centinela = ConsoleInput.getInt();
 						
 								if(centinela == 4){
-								imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
 								indice_cancion = ConsoleInput.getInt();
 
 								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1405,7 +1405,7 @@ public class Programa{
                         centinela = ConsoleInput.getInt();
 						
                         if(centinela == 26){
-                        imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
+                        imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
                         indice_cancion = ConsoleInput.getInt();
 
                         inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
@@ -1565,19 +1565,19 @@ public class Programa{
                         System.out.println("");
 
                         opcionAleatorio = dato.nextInt();
-                        centinela = ConsoleInput.getInt();
+                        //centinela = ConsoleInput.getInt();
 						
-                        if(centinela == 4){
-                        imprimir("Ingrese indice de la cancion, entre 0 y "+(info_canciones.length-1));
-                        indice_cancion = ConsoleInput.getInt();
+                        //if(centinela == 4){
+                        //imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
+                        //indice_cancion = ConsoleInput.getInt();
 
-                        inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-                        fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
+                        //inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
+                        //fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
                         
-                        letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
+                        //letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
-                        imprimir(letra_cancion.toString());
-                        }
+                        //imprimir(letra_cancion.toString());
+                        //}
 
                         if (opcionAleatorio == 1) {
                             Reproduccion.detener();
