@@ -13,11 +13,11 @@ Para observar la letra correctamente asegurese de indicar el indice correspondie
 
 6. En algún lugar                        3     
 
-7. Don't cry                             24
+7. Don't cry                             23
 
 8. Maldito Duende                        4
 
-9. Hey Jude                              23
+9. Hey Jude                              22
 
 10. La camisa negra                      5
 
@@ -31,7 +31,7 @@ Para observar la letra correctamente asegurese de indicar el indice correspondie
 
 15. Me muero                             8      
 
-16. Mírame                               22
+16. Mírame                               0
 
 17. Nada valgo sin tu amor               9
 
