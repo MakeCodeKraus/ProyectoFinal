@@ -136,6 +136,7 @@ public class Programa{
 			}
 			System.out.println();
 			//str.append(data[i]+"\n");
+			
 		}
 		return str;
 	}
