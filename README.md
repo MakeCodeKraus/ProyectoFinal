@@ -1,12 +1,15 @@
 # ProyectoFinal 😎
+<center><img src="./src/img/Logo_programa.png"></center>
 
-## Descripcion
+## Descripción
+
+PEPLAYER es un programa que permite realizar karaokes con distintas canciones que se encuentran separadas por genero, artistas, álbumes o simplemente se puede escoger manualmente la canción que deseas de la lista, adicionalmente el programa cuenta con una opción de reproducción aleatoria.
 
 ### Integrantes
 
-- Pablo Loaiza Mejia
+- Pablo Loaiza Mejía
 
-- Estefania Lopez Varelas 
+- Estefania López Varelas 
 
 ## Recursos
 

@@ -103,7 +103,8 @@
 	Hemos implementado el método de empezar y detener en todas distintas opciones con una interfaz y se creo una opción para mostrar las letras de las canciones.
 
 ### ¿Qué vamos a hacer? 
-	crear un método que permita mostrar la letra de la canción automáticamente si tener que solicitar mostrar la letra.
+	- crear un método que permita mostrar la letra de la canción automáticamente si tener que solicitar mostrar la letra.
+	- Actualizar archivo README
 
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
