@@ -85,3 +85,26 @@
 
 ### ¿Qué dificultades hemos tenido? 
 	Ninguna.
+
+## 6/05/2021
+### ¿Qué hemos hecho? 
+	Hemos implementado el método de empezar y detener en el menu de géneros y artistas.
+
+### ¿Qué vamos a hacer? 
+	- Implementar métodos de reproducción y detención de las canciones en el menu de álbum y de todas las canciones.
+	- Implementar método de reproducción y detención de las canciones de forma aleatorio.
+	- Crear arreglo con nombre de las canciones para implementarlo en la opción de música aleatoria. 
+
+### ¿Qué dificultades hemos tenido? 
+	Ninguna.
+
+## 18/05/2021
+### ¿Qué hemos hecho? 
+	Hemos implementado el método de empezar y detener en todas distintas opciones con una interfaz y se creo una opción para mostrar las letras de las canciones.
+
+### ¿Qué vamos a hacer? 
+	crear un método que permita mostrar la letra de la canción automáticamente si tener que solicitar mostrar la letra.
+
+### ¿Qué dificultades hemos tenido? 
+	Ninguna.
+
