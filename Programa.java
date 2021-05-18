@@ -4,175 +4,178 @@ import static org.fusesource.jansi.Ansi.*;
 import static org.fusesource.jansi.Ansi.Color.*;
 import java.util.*;
 
-public class Programa{
+public class Programa {
 
-	public static void displayVacio(int n,int m){
-		for (int i=0;i<n;i++) 
-		{
-			for (int j=0;j<m;j++)
-			{
-				System.out.print("  ");
-			}
-			System.out.println();
-		}
-	}
+    public static void displayVacio(int n, int m) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
 
-	public static void imprimirDisplay(int n,int m){
-		String simbolo = Math.random()>5?"*":" ";
-		for (int i=0;i<n;i++) 
-		{
-			if(i+1==n)
-			{
-				simbolo = "#";
+    public static void imprimirDisplay(int n, int m) {
+        String simbolo = Math.random() > 5 ? "*" : " ";
+        for (int i = 0; i < n; i++) {
+            if (i + 1 == n) {
+                simbolo = "#";
 
-			}
-			for (int j=0;j<m;j++)
-			{
-				System.out.print(i+simbolo);
-			}
-			System.out.println();
-		}
-	}
+            }
+            for (int j = 0; j < m; j++) {
+                System.out.print(i + simbolo);
+            }
+            System.out.println();
+        }
+    }
 
-	public static void borrarDisplay(int n){
-		//Se le suma 1 si se ejecuta con el bat, ya que la ultima linea es el pause
-		//for (int i=0;i<=n;i++){
-			//System.out.println(ansi().cursorUpLine(i));
-		//}
-		System.out.println(ansi().cursor(2,1));
-		displayVacio(5,6);
-		System.out.println(ansi().cursor(1,1));
-		System.out.println(ansi().reset());
-	}
+    public static void borrarDisplay(int n) {
+        // Se le suma 1 si se ejecuta con el bat, ya que la ultima linea es el pause
+        // for (int i=0;i<=n;i++){
+        // System.out.println(ansi().cursorUpLine(i));
+        // }
+        System.out.println(ansi().cursor(2, 1));
+        displayVacio(5, 6);
+        System.out.println(ansi().cursor(1, 1));
+        System.out.println(ansi().reset());
+    }
 
-	public static void animar() throws InterruptedException{
-		
+    public static void animar() throws InterruptedException {
 
-		Thread.sleep(1000);
-		
-		/*
-		for(int i=0;i<10;i++){
-			System.out.print("\r");
-			//System.out.print("\r");
-			texto = texto+nuevo.charAt(i);
-			System.out.print(texto);
-			Thread.sleep(1000);
-		}*/
-	}
+        Thread.sleep(1000);
 
-	public static String convertirUnicode(String letra,String cadena){
-		
-		StringBuilder str = new StringBuilder(cadena);
-		int indice = -1;
-		char caracter = 0;
-		indice = str.lastIndexOf(letra);
-		
-		if(indice>=0 ){
-			switch(letra){
-				case "á": caracter = '\u00E1';
-					      break;
-				case "é": caracter = '\u00E9';
-					      break;
-				case "í": caracter = '\u00ED';
-					      break;
-		        case "ó": caracter = '\u00F3';
-					      break;
-			    case "ú": caracter = '\u00FA';
-					      break;
-				case "ñ": caracter = '\u00F1';
-					      break;
-				case "Á": caracter = '\u00C1';
-						  break;
-				case "É": caracter = '\u00C9';
-						  break;
-				case "Í": caracter = '\u00CD';
-						  break;
-				case "Ó": caracter = '\u00D3';
-						  break;
-				case "Ú": caracter = '\u00DA';
-						  break;
-				case "Ñ": caracter = '\u00D1';
-						  break;
-			}
-			// System.out.println("\\u" + Integer.toHexString('÷' | 0x10000).substring(1));
-			str.replace(indice,indice+1,""+caracter);
-		}
+        /*
+         * for(int i=0;i<10;i++){ System.out.print("\r"); //System.out.print("\r");
+         * texto = texto+nuevo.charAt(i); System.out.print(texto); Thread.sleep(1000); }
+         */
+    }
 
-		return str.toString();
-	}
+    public static String convertirUnicode(String letra, String cadena) {
 
-	public static void imprimir(String cadena){
-		String str; 
-		str = convertirUnicode("á",cadena);
-		str = convertirUnicode("Á",cadena);
-		str = convertirUnicode("á",str);
-		str = convertirUnicode("é",str);
-		str = convertirUnicode("í",str);
-		str = convertirUnicode("ó",str);
-		str = convertirUnicode("ú",str);
-		str = convertirUnicode("ñ",str);
-		str = convertirUnicode("É",str);
-		str = convertirUnicode("Í",str);
-		str = convertirUnicode("Ó",str);
-		str = convertirUnicode("Ú",str);
-		str = convertirUnicode("Ñ",str);
+        StringBuilder str = new StringBuilder(cadena);
+        int indice = -1;
+        char caracter = 0;
+        indice = str.lastIndexOf(letra);
 
-		System.out.println(str);
-	}
+        if (indice >= 0) {
+            switch (letra) {
+                case "á":
+                    caracter = '\u00E1';
+                    break;
+                case "é":
+                    caracter = '\u00E9';
+                    break;
+                case "í":
+                    caracter = '\u00ED';
+                    break;
+                case "ó":
+                    caracter = '\u00F3';
+                    break;
+                case "ú":
+                    caracter = '\u00FA';
+                    break;
+                case "ñ":
+                    caracter = '\u00F1';
+                    break;
+                case "Á":
+                    caracter = '\u00C1';
+                    break;
+                case "É":
+                    caracter = '\u00C9';
+                    break;
+                case "Í":
+                    caracter = '\u00CD';
+                    break;
+                case "Ó":
+                    caracter = '\u00D3';
+                    break;
+                case "Ú":
+                    caracter = '\u00DA';
+                    break;
+                case "Ñ":
+                    caracter = '\u00D1';
+                    break;
+            }
+            // System.out.println("\\u" + Integer.toHexString('÷' | 0x10000).substring(1));
+            str.replace(indice, indice + 1, "" + caracter);
+        }
 
-	public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data){
-		StringBuilder str = new StringBuilder();
-		StringTokenizer temp;
+        return str.toString();
+    }
 
-		for(int i = inicio; i<=fin; i++)
-		{
-			//System.out.println("@  "+data[i]);
+    public static void imprimir(String cadena) {
+        String str;
+        str = convertirUnicode("á", cadena);
+        str = convertirUnicode("Á", cadena);
+        str = convertirUnicode("á", str);
+        str = convertirUnicode("é", str);
+        str = convertirUnicode("í", str);
+        str = convertirUnicode("ó", str);
+        str = convertirUnicode("ú", str);
+        str = convertirUnicode("ñ", str);
+        str = convertirUnicode("É", str);
+        str = convertirUnicode("Í", str);
+        str = convertirUnicode("Ó", str);
+        str = convertirUnicode("Ú", str);
+        str = convertirUnicode("Ñ", str);
 
-			temp = new StringTokenizer(data[i],";");
+        System.out.println(str);
+    }
 
-			while(temp.hasMoreTokens())
-			{
-				System.out.print(temp.nextToken()+" ");
-			}
-			System.out.println();
-			//str.append(data[i]+"\n");
-			
-		}
-		return str;
-	}
-    
+    public static StringBuilder obtenerLetraCancion(int inicio, int fin, String[] data) {
+        StringBuilder str = new StringBuilder();
+        StringTokenizer temp;
+
+        for (int i = inicio; i <= fin; i++) {
+            // System.out.println("@ "+data[i]);
+
+            temp = new StringTokenizer(data[i], ";");
+
+            while (temp.hasMoreTokens()) {
+                System.out.print(temp.nextToken() + " ");
+            }
+            System.out.println();
+            // str.append(data[i]+"\n");
+
+        }
+        return str;
+    }
+
     public static void main(String[] args) {
         Scanner dato = new Scanner(System.in);
         int opcionMenuPrincipal;
         Audio audio = new Audio();
-		int centinela = 0;	
-		int indice_cancion = 0;
-		int inicio_letra = 0, fin_letra = 0;
-		String [][] info_canciones;
-		StringBuilder letra_cancion;
+        int centinela = 0;
+        int indice_cancion = 0;
+        int inicio_letra = 0, fin_letra = 0;
+        String[][] info_canciones;
+        StringBuilder letra_cancion;
 
-        String[] canciones = {"A Dios le pido", "Como Camarón", "Cuando sea grande", "Dame amor", "El muelle de San Blás", "En algún lugar", "Don't cry", "Maldito duende", "Hey Jude", "La camisa negra", "La gasolina", "La playa", "Laura no esta", "Me gustas tú", "Me muero", "Mírame", "Nada valgo sin tu amor", "París", "Rayando el sol", "Rosas", "Tu peor error", "Vino tinto", "Vivo por ella", "Yesterday"};
+        String[] canciones = { "A Dios le pido", "Como Camarón", "Cuando sea grande", "Dame amor",
+                "El muelle de San Blás", "En algún lugar", "Don't cry", "Maldito duende", "Hey Jude", "La camisa negra",
+                "La gasolina", "La playa", "Laura no esta", "Me gustas tú", "Me muero", "Mírame",
+                "Nada valgo sin tu amor", "París", "Rayando el sol", "Rosas", "Tu peor error", "Vino tinto",
+                "Vivo por ella", "Yesterday" };
         canciones = ConsoleFile.readBigFile("recursos/letras.csv");
-		info_canciones = ConsoleData.dataList(canciones);
+        info_canciones = ConsoleData.dataList(canciones);
 
-        
-        try{
+        try {
             displayVacio(50, 50);
 
             do {
 
                 System.out.println("                         _     _                ");
-				System.out.println("                        ( \\---/ )                ");
-				System.out.println("                         ) . . (                ");
-				System.out.println("___________________,--._(___Y___)_,--.___________");
-				System.out.println("                        `--'           `--'                ");
-			
-				System.out.println("______ ___________ _       _____   _____________"); 
-				System.out.println("| ___ \\  ___| ___ \\ |     / _ \\ \\ / /  ___| ___ \\ ");
-				System.out.println("| |_/ / |__ | |_/ / |    / /_\\ \\ V /| |__ | |_/ / ");
-				System.out.println("|  __/|  __||  __/| |    |  _  |\\ / |  __||    / "); 
-				System.out.println("| |   | |___| |   | |____| | | || | | |___| |\\ \\ "); 
-				System.out.println("\\_|   \\____/\\_|   \\_____/\\_| |_/\\_/ \\____/\\_| \\_|");
+                System.out.println("                        ( \\---/ )                ");
+                System.out.println("                         ) . . (                ");
+                System.out.println("___________________,--._(___Y___)_,--.___________");
+                System.out.println("                        `--'           `--'                ");
+
+                System.out.println("______ ___________ _       _____   _____________");
+                System.out.println("| ___ \\  ___| ___ \\ |     / _ \\ \\ / /  ___| ___ \\ ");
+                System.out.println("| |_/ / |__ | |_/ / |    / /_\\ \\ V /| |__ | |_/ / ");
+                System.out.println("|  __/|  __||  __/| |    |  _  |\\ / |  __||    / ");
+                System.out.println("| |   | |___| |   | |____| | | || | | |___| |\\ \\ ");
+                System.out.println("\\_|   \\____/\\_|   \\_____/\\_| |_/\\_/ \\____/\\_| \\_|");
 
                 System.out.println("¿Que deseas escuchar?");
                 System.out.println("");
@@ -223,30 +226,18 @@ public class Programa{
                                 System.out.println("12. Tu peor error");
                                 System.out.println("13. Vino tinto");
                                 System.out.println("14. Detener reproducción");
-                                System.out.println("15. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 15){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
 
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-                            
                                 switch (opcionGenero) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(2);
                                         System.out.println("Reproduciendo Cuando sea grande");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(2);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -254,17 +245,23 @@ public class Programa{
                                         Reproduccion.empezar(4);
                                         System.out.println("Reproduciendo El muelle de San Blás");
                                         System.out.println("");
+                                        Letras.mostrarLetras(4);
+                                        System.out.println("");
                                         break;
                                     case 3:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(5);
                                         System.out.println("Reproduciendo En algún lugar");
                                         System.out.println("");
+                                        Letras.mostrarLetras(5);
+                                        System.out.println("");
                                         break;
                                     case 4:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(7);
                                         System.out.println("Reproduciendo Maldito duende");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(7);
                                         System.out.println("");
                                         break;
                                     case 5:
@@ -278,11 +275,15 @@ public class Programa{
                                         Reproduccion.empezar(12);
                                         System.out.println("Reproduciendo Laura no esta");
                                         System.out.println("");
+                                        Letras.mostrarLetras(12);
+                                        System.out.println("");
                                         break;
                                     case 7:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(13);
                                         System.out.println("Reproduciendo Me gustas tú");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(13);
                                         System.out.println("");
                                         break;
                                     case 8:
@@ -290,11 +291,15 @@ public class Programa{
                                         Reproduccion.empezar(14);
                                         System.out.println("Reproduciendo Me muero");
                                         System.out.println("");
+                                        Letras.mostrarLetras(14);
+                                        System.out.println("");
                                         break;
                                     case 9:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(16);
                                         System.out.println("Reproduciendo Nada valgo sin tu amor");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(16);
                                         System.out.println("");
                                         break;
                                     case 10:
@@ -302,11 +307,15 @@ public class Programa{
                                         Reproduccion.empezar(18);
                                         System.out.println("Reproduciendo Rayando el sol");
                                         System.out.println("");
+                                        Letras.mostrarLetras(18);
+                                        System.out.println("");
                                         break;
                                     case 11:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(19);
                                         System.out.println("Reproduciendo Rosas");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(19);
                                         System.out.println("");
                                         break;
                                     case 12:
@@ -314,11 +323,15 @@ public class Programa{
                                         Reproduccion.empezar(20);
                                         System.out.println("Reproduciendo Tu peor error");
                                         System.out.println("");
+                                        Letras.mostrarLetras(20);
+                                        System.out.println("");
                                         break;
                                     case 13:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(21);
                                         System.out.println("Reproduciendo Vino tinto");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(21);
                                         System.out.println("");
                                         break;
                                     case 14:
@@ -343,24 +356,10 @@ public class Programa{
                                 System.out.println("6. Vivo por ella");
                                 System.out.println("7. Yesterday");
                                 System.out.println("8. Detener reproducción");
-                                System.out.println("9. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 9){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionGenero) {
                                     case 1:
@@ -368,11 +367,15 @@ public class Programa{
                                         Reproduccion.empezar(0);
                                         System.out.println("Reproduciendo A Dios le pido");
                                         System.out.println("");
+                                        Letras.mostrarLetras(0);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(1);
                                         System.out.println("Reproduciendo Como camarón");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(1);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -380,11 +383,15 @@ public class Programa{
                                         Reproduccion.empezar(3);
                                         System.out.println("Reproduciendo Dame amor");
                                         System.out.println("");
+                                        Letras.mostrarLetras(3);
+                                        System.out.println("");
                                         break;
                                     case 4:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(11);
                                         System.out.println("Reproduciendo La playa");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(11);
                                         System.out.println("");
                                         break;
                                     case 5:
@@ -392,17 +399,23 @@ public class Programa{
                                         Reproduccion.empezar(17);
                                         System.out.println("Reproduciendo Paris");
                                         System.out.println("");
+                                        Letras.mostrarLetras(17);
+                                        System.out.println("");
                                         break;
                                     case 6:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(22);
                                         System.out.println("Reproduciendo Vivo por ella");
                                         System.out.println("");
+                                        Letras.mostrarLetras(22);
+                                        System.out.println("");
                                         break;
                                     case 7:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(23);
                                         System.out.println("Reproduciendo Yesterday");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(23);
                                         System.out.println("");
                                         break;
                                     case 8:
@@ -422,24 +435,10 @@ public class Programa{
                                 System.out.println("1. La gasolina");
                                 System.out.println("2. Mírame");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionGenero) {
                                     case 1:
@@ -447,11 +446,15 @@ public class Programa{
                                         Reproduccion.empezar(10);
                                         System.out.println("Reproduciendo La gasolina");
                                         System.out.println("");
+                                        Letras.mostrarLetras(10);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(15);
                                         System.out.println("Reproduciendo Mírame");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(15);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -471,24 +474,10 @@ public class Programa{
                                 System.out.println("1. Hey Jude");
                                 System.out.println("2. Don't cry");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionGenero = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionGenero) {
                                     case 1:
@@ -496,11 +485,15 @@ public class Programa{
                                         Reproduccion.empezar(8);
                                         System.out.println("Reproduciendo Hey Jude");
                                         System.out.println("");
+                                        Letras.mostrarLetras(8);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(6);
                                         System.out.println("Reproduciendo Don't cry");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(6);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -558,24 +551,10 @@ public class Programa{
                                 System.out.println("2. La camisa negra");
                                 System.out.println("3. Nada valgo sin tu amor");
                                 System.out.println("4. Detener reproducción");
-                                System.out.println("5. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 5){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -583,17 +562,23 @@ public class Programa{
                                         Reproduccion.empezar(0);
                                         System.out.println("Reproduciendo A Dios le pido");
                                         System.out.println("");
+                                        Letras.mostrarLetras(0);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(9);
                                         System.out.println("Reproduciendo La camisa negra");
                                         System.out.println("");
+                                        Letras.mostrarLetras(9);
+                                        System.out.println("");
                                         break;
                                     case 3:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(16);
                                         System.out.println("Reproduciendo Nada valgo sin tu amor");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(16);
                                         System.out.println("");
                                         break;
                                     case 4:
@@ -613,24 +598,10 @@ public class Programa{
                                 System.out.println("1. Como camarón");
                                 System.out.println("2. Vino tinto");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -638,11 +609,15 @@ public class Programa{
                                         Reproduccion.empezar(1);
                                         System.out.println("Reproduciendo Como camarón");
                                         System.out.println("");
+                                        Letras.mostrarLetras(1);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(21);
                                         System.out.println("Reproduciendo Vino tinto");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(21);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -661,30 +636,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Cuando sea grande");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(2);
                                         System.out.println("Reproduciendo Cuando sea grande");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(2);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -703,30 +666,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Dame amor");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(3);
                                         System.out.println("Reproduciendo Dame amor");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(3);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -745,30 +696,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. El muelle de San Blás");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(4);
                                         System.out.println("Reproduciendo El muelle de Sam Blás");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(4);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -787,30 +726,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. En algún lugar");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(5);
                                         System.out.println("Reproduciendo En algún lugar");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(5);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -829,30 +756,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Don't cry");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(6);
                                         System.out.println("Reproduciendo Don't cry");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(6);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -871,30 +786,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Maldito duende");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(7);
                                         System.out.println("Reproduciendo Maldito duende");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(7);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -914,25 +817,10 @@ public class Programa{
                                 System.out.println("1. Hey Jude");
                                 System.out.println("2. Yesterday");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -940,11 +828,15 @@ public class Programa{
                                         Reproduccion.empezar(8);
                                         System.out.println("Reproduciendo Hey Jude");
                                         System.out.println("");
+                                        Letras.mostrarLetras(8);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(23);
                                         System.out.println("Reproduciendo Yesterday");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(23);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -964,25 +856,10 @@ public class Programa{
                                 System.out.println("1. La Gasolina");
                                 System.out.println("2. Mírame");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -990,11 +867,15 @@ public class Programa{
                                         Reproduccion.empezar(10);
                                         System.out.println("Reproduciendo La gasolina");
                                         System.out.println("");
+                                        Letras.mostrarLetras(10);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(15);
                                         System.out.println("Reproduciendo Mírame");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(15);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -1016,25 +897,10 @@ public class Programa{
                                 System.out.println("2. París");
                                 System.out.println("3. La playa");
                                 System.out.println("4. Detener reproducción");
-                                System.out.println("5. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 5){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionArtistas) {
                                     case 1:
@@ -1042,17 +908,23 @@ public class Programa{
                                         Reproduccion.empezar(19);
                                         System.out.println("Reproduciendo Rosas");
                                         System.out.println("");
+                                        Letras.mostrarLetras(19);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(17);
                                         System.out.println("Reproduciendo París");
                                         System.out.println("");
+                                        Letras.mostrarLetras(17);
+                                        System.out.println("");
                                         break;
                                     case 3:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(11);
                                         System.out.println("Reproduciendo La playa");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(11);
                                         System.out.println("");
                                         break;
                                     case 4:
@@ -1071,30 +943,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Laura no esta");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(12);
                                         System.out.println("Reproduciendo Laura no esta");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(12);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -1113,31 +973,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Vivo por ella");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(22);
                                         System.out.println("Reproduciendo Vivo por ella");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(22);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -1156,31 +1003,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Me muero");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(14);
                                         System.out.println("Reproduciendo Me muero");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(14);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -1199,30 +1033,18 @@ public class Programa{
                                 System.out.println("");
                                 System.out.println("1. Me gustas tu");
                                 System.out.println("2. Detener reproducción");
-                                System.out.println("3. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionArtistas = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 3){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionArtistas) {
                                     case 1:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(13);
                                         System.out.println("Reproduciendo Me gustas tú");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(13);
                                         System.out.println("");
                                         break;
                                     case 2:
@@ -1267,24 +1089,10 @@ public class Programa{
                                 System.out.println("1. París");
                                 System.out.println("2. La playa");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionAlbum = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
 
                                 switch (opcionAlbum) {
                                     case 1:
@@ -1292,11 +1100,15 @@ public class Programa{
                                         Reproduccion.empezar(17);
                                         System.out.println("Reproduciendo París");
                                         System.out.println("");
+                                        Letras.mostrarLetras(17);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(11);
                                         System.out.println("Reproduciendo La playa");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(11);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -1316,25 +1128,10 @@ public class Programa{
                                 System.out.println("1. Tengo la camisa negra");
                                 System.out.println("2. Nada Valgo sin tu amor");
                                 System.out.println("3. Detener reproducción");
-                                System.out.println("4. Mostrar letra");
                                 System.out.println("0. Salir");
                                 System.out.println("");
 
                                 opcionAlbum = dato.nextInt();
-                                centinela = ConsoleInput.getInt();
-						
-								if(centinela == 4){
-                                imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-								indice_cancion = ConsoleInput.getInt();
-
-								inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-								fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-								
-								letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-								imprimir(letra_cancion.toString());
-                                }
-
 
                                 switch (opcionAlbum) {
                                     case 1:
@@ -1342,11 +1139,15 @@ public class Programa{
                                         Reproduccion.empezar(9);
                                         System.out.println("Reproduciendo Tengo la camisa negra");
                                         System.out.println("");
+                                        Letras.mostrarLetras(9);
+                                        System.out.println("");
                                         break;
                                     case 2:
                                         Reproduccion.detener();
                                         Reproduccion.empezar(16);
                                         System.out.println("Reproduciendo Nada Valgo sin tu amor");
+                                        System.out.println("");
+                                        Letras.mostrarLetras(16);
                                         System.out.println("");
                                         break;
                                     case 3:
@@ -1398,146 +1199,203 @@ public class Programa{
                         System.out.println("23. Vivo por ella");
                         System.out.println("24. Yesterday");
                         System.out.println("25. Detener reproducción");
-                        System.out.println("26. Mostrar letra");
                         System.out.println("0. Salir");
                         System.out.println("");
 
                         cancion = dato.nextInt();
-                        centinela = ConsoleInput.getInt();
-						
-                        if(centinela == 26){
-                        imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-                        indice_cancion = ConsoleInput.getInt();
-
-                        inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-                        fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-                        
-                        letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-                        imprimir(letra_cancion.toString());
-                        }
-
 
                         switch (cancion) {
                             case 1:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(0);
                                 System.out.println("Reproduciendo A Dios le pido");
+                                System.out.println("");
+                                Letras.mostrarLetras(0);
+                                System.out.println("");
                                 break;
                             case 2:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(1);
                                 System.out.println("Reproduciendo Como Camarón");
+                                System.out.println("");
+                                Letras.mostrarLetras(1);
+                                System.out.println("");
                                 break;
                             case 3:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(2);
                                 System.out.println("Reproduciendo Cuando sea grande");
+                                System.out.println("");
+                                Letras.mostrarLetras(2);
+                                System.out.println("");
                                 break;
                             case 4:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(3);
                                 System.out.println("Reproduciendo Dame amor");
+                                System.out.println("");
+                                Letras.mostrarLetras(3);
+                                System.out.println("");
                                 break;
                             case 5:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(4);
                                 System.out.println("Reproduciendo El muelle de San Blás");
+                                System.out.println("");
+                                Letras.mostrarLetras(4);
+                                System.out.println("");
                                 break;
                             case 6:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(5);
                                 System.out.println("Reproduciendo En algún lugar");
+                                System.out.println("");
+                                Letras.mostrarLetras(5);
+                                System.out.println("");
                                 break;
                             case 7:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(6);
                                 System.out.println("Reproduciendo Don't cry");
+                                System.out.println("");
+                                Letras.mostrarLetras(6);
+                                System.out.println("");
                                 break;
                             case 8:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(7);
                                 System.out.println("Reproduciendo Maldito Duende");
+                                System.out.println("");
+                                Letras.mostrarLetras(7);
+                                System.out.println("");
                                 break;
                             case 9:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(8);
                                 System.out.println("Reproduciendo Hey Jude");
+                                System.out.println("");
+                                Letras.mostrarLetras(8);
+                                System.out.println("");
                                 break;
                             case 10:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(9);
                                 System.out.println("Reproduciendo La camisa negra");
+                                System.out.println("");
+                                Letras.mostrarLetras(9);
+                                System.out.println("");
                                 break;
                             case 11:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(10);
                                 System.out.println("Reproduciendo La gasolina");
+                                System.out.println("");
+                                Letras.mostrarLetras(10);
+                                System.out.println("");
                                 break;
                             case 12:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(11);
                                 System.out.println("Reproduciendo La playa");
+                                System.out.println("");
+                                Letras.mostrarLetras(11);
+                                System.out.println("");
                                 break;
                             case 13:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(12);
                                 System.out.println("Reproduciendo Laura no esta");
+                                System.out.println("");
+                                Letras.mostrarLetras(12);
+                                System.out.println("");
                                 break;
                             case 14:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(13);
                                 System.out.println("Reproduciendo Me gustas tú");
+                                System.out.println("");
+                                Letras.mostrarLetras(13);
+                                System.out.println("");
                                 break;
                             case 15:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(14);
                                 System.out.println("Reproduciendo Me muero");
+                                System.out.println("");
+                                Letras.mostrarLetras(14);
+                                System.out.println("");
                                 break;
                             case 16:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(15);
                                 System.out.println("Reproduciendo Mírame");
+                                System.out.println("");
+                                Letras.mostrarLetras(15);
+                                System.out.println("");
                                 break;
                             case 17:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(16);
                                 System.out.println("Reproduciendo Nada valgo sin tu amor");
+                                System.out.println("");
+                                Letras.mostrarLetras(16);
+                                System.out.println("");
                                 break;
                             case 18:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(17);
                                 System.out.println("Reproduciendo París");
+                                System.out.println("");
+                                Letras.mostrarLetras(17);
+                                System.out.println("");
                                 break;
                             case 19:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(18);
                                 System.out.println("Reproduciendo Rayando el sol");
+                                System.out.println("");
+                                Letras.mostrarLetras(18);
+                                System.out.println("");
                                 break;
                             case 20:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(19);
                                 System.out.println("Reproduciendo Rosas");
+                                System.out.println("");
+                                Letras.mostrarLetras(19);
+                                System.out.println("");
                                 break;
                             case 21:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(20);
                                 System.out.println("Reproduciendo Tu peor error");
+                                System.out.println("");
+                                Letras.mostrarLetras(20);
+                                System.out.println("");
                                 break;
                             case 22:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(21);
                                 System.out.println("Reproduciendo Vino tinto");
+                                System.out.println("");
+                                Letras.mostrarLetras(21);
+                                System.out.println("");
                                 break;
                             case 23:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(22);
                                 System.out.println("Reproduciendo Vivo por ella");
+                                System.out.println("");
+                                Letras.mostrarLetras(22);
+                                System.out.println("");
                                 break;
                             case 24:
                                 Reproduccion.detener();
                                 Reproduccion.empezar(23);
                                 System.out.println("Reproduciendo Yesterday");
+                                System.out.println("");
+                                Letras.mostrarLetras(23);
+                                System.out.println("");
                                 break;
                             case 25:
                                 Reproduccion.detener();
@@ -1553,7 +1411,7 @@ public class Programa{
                 else if (opcionMenuPrincipal == 5) {
                     int aleatorio = (int) (Math.random() * 24);
                     int opcionAleatorio;
-                    
+
                     Reproduccion.empezar(aleatorio);
                     System.out.println("Reproduciendo " + canciones[aleatorio]);
 
@@ -1566,19 +1424,6 @@ public class Programa{
                         System.out.println("");
 
                         opcionAleatorio = dato.nextInt();
-                        //centinela = ConsoleInput.getInt();
-						
-                        //if(centinela == 4){
-                        //imprimir("Dirijase a el archivo lista_canciones.txt e ingrese el índice correspondiente de la canción");
-                        //indice_cancion = ConsoleInput.getInt();
-
-                        //inicio_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.INICIO_CANCION]);
-                        //fin_letra = ConsoleInput.stringToInt(info_canciones[indice_cancion][ConsoleData.FIN_CANCION]);
-                        
-                        //letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
-
-                        //imprimir(letra_cancion.toString());
-                        //}
 
                         if (opcionAleatorio == 1) {
                             Reproduccion.detener();
@@ -1588,10 +1433,16 @@ public class Programa{
                                 aleatorio++;
                                 System.out.println("Reproduciendo " + canciones[aleatorio]);
                                 Reproduccion.empezar(aleatorio);
+                                System.out.println("");
+                                Letras.mostrarLetras(aleatorio);
+                                System.out.println("");
                             } else {
                                 aleatorio = 0;
                                 System.out.println("Reproduciendo " + canciones[aleatorio]);
                                 Reproduccion.empezar(aleatorio);
+                                System.out.println("");
+                                Letras.mostrarLetras(aleatorio);
+                                System.out.println("");
                             }
                         }
 
@@ -1600,12 +1451,12 @@ public class Programa{
 
             } while (opcionMenuPrincipal != 6);
 
-        }catch(Exception e){
+        } catch (Exception e) {
 
             System.out.println(e);
         }
 
-        finally{
+        finally {
             audio.detener();
         }
     }
