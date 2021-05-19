@@ -1414,13 +1414,15 @@ public class Programa {
 
                     Reproduccion.empezar(aleatorio);
                     System.out.println("Reproduciendo " + canciones[aleatorio]);
+                    System.out.println("");
+                    Letras.mostrarLetras(aleatorio);
+                    System.out.println("");
 
                     do {
                         System.out.println("Reproduciendo música aleatoriamente");
                         System.out.println("1. Detener.");
                         System.out.println("2. Siguiente.");
                         System.out.println("3. Salir.");
-                        System.out.println("4. Mostrar letra");
                         System.out.println("");
 
                         opcionAleatorio = dato.nextInt();
