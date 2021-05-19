@@ -164,6 +164,8 @@ public class Programa {
 
             do {
 
+                System.out.println("        BIENVENIDOS A LA ROCKOLA PEPLAYER       ");
+                
                 System.out.println("                         _     _                ");
                 System.out.println("                        ( \\---/ )                ");
                 System.out.println("                         ) . . (                ");

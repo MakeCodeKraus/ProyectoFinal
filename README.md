@@ -5,6 +5,9 @@
 
 PEPLAYER es un programa que permite realizar karaokes con distintas canciones que se encuentran separadas por genero, artistas, álbumes o simplemente se puede escoger manualmente la canción que deseas de la lista, adicionalmente el programa cuenta con una opción de reproducción aleatoria.
 
+Para visualizar el correcto funcionamiento de este repositorio diríjase al siguiente enlace:
+https://youtu.be/-F3hXDisK0o
+
 ### Integrantes
 
 - Pablo Loaiza Mejía

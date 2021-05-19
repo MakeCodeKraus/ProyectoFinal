@@ -88,22 +88,38 @@
 
 ## 6/05/2021
 ### ¿Qué hemos hecho? 
-	Hemos implementado el método de empezar y detener en el menu de géneros y artistas.
+	-Separación total del repositorio del profesor.
+	-Hemos implementado el método de empezar y detener en el menu de géneros y artistas.
 
 ### ¿Qué vamos a hacer? 
+	-Se implementar método para que el programa no desarrollara errores gramaticales en el uso de acentos. 
+	-Incluir diseño Ascci en el menú principal.
+	-Implementar método para que se genere la letra de la canción en las opciones de género, álbum y artista.
 	- Implementar métodos de reproducción y detención de las canciones en el menu de álbum y de todas las canciones.
 	- Implementar método de reproducción y detención de las canciones de forma aleatorio.
 	- Crear arreglo con nombre de las canciones para implementarlo en la opción de música aleatoria. 
 
 ### ¿Qué dificultades hemos tenido? 
-	Ninguna.
+	Problemas de ejecución.
+
+## 13/05/2021
+### ¿Qué hemos hecho? 
+	Hemos seguido las indicaciones del profesor para solucionar los errores de ejecución del programa haciendo un cambio en el archivo de recursos/letras.csv
+
+### ¿Qué vamos a hacer? 
+	- Reemplazar el archivo que genera errores en la compilación.
+	- Verificar el correcto funcionamiento de el programa.
+	- Identificar el indice correspondiente a cada canción. 
+
+### ¿Qué dificultades hemos tenido? 
+	Una de las canciones se mezclaba con otra ya identificaba el ##; como parte de la canción.	
 
 ## 18/05/2021
 ### ¿Qué hemos hecho? 
 	Hemos implementado el método de empezar y detener en todas distintas opciones con una interfaz y se creo una opción para mostrar las letras de las canciones.
 
 ### ¿Qué vamos a hacer? 
-	- crear un método que permita mostrar la letra de la canción automáticamente si tener que solicitar mostrar la letra.
+	- Crear un método que permita mostrar la letra de la canción automáticamente si tener que solicitar mostrar la letra.
 	- Actualizar archivo README
 
 ### ¿Qué dificultades hemos tenido? 
